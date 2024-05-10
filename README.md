@@ -31,24 +31,16 @@ These Keypad modules are made of thin, flexible membrane material. The 4 x4 keyp
 
 All the above mentioned LCD display will have 16 Pins and the programming approach is also the same and hence the choice is left to you. 
 Below is the Pinout and Pin Description of 16x2 LCD Module:
-
 ![image](https://user-images.githubusercontent.com/36288975/233858086-7b1a88a2-f941-475c-86c2-b3bae68bdf7e.png)
 ![image](https://user-images.githubusercontent.com/36288975/233857710-541ac1c2-786c-4dfc-b7b5-e3a4868a9cb6.png)
 ![image](https://user-images.githubusercontent.com/36288975/233857733-05df5dbf-1a1e-479e-85bb-8014a39ad878.png)
-
 4-bit and 8-bit Mode of LCD:
-
 The LCD can work in two different modes, namely the 4-bit mode and the 8-bit mode. In 4 bit mode we send the data nibble by nibble, first upper nibble and then lower nibble. For those of you who don’t know what a nibble is: a nibble is a group of four bits, so the lower four bits (D0-D3) of a byte form the lower nibble while the upper four bits (D4-D7) of a byte form the higher nibble. This enables us to send 8 bit data.
-
 Whereas in 8 bit mode we can send the 8-bit data directly in one stroke since we use all the 8 data lines.
-
  8-bit mode is faster and flawless than 4-bit mode. But the major drawback is that it needs 8 data lines connected to the microcontroller. This will make us run out of I/O pins on our MCU, so 4-bit mode is widely used. No control pins are used to set these modes. 
  LCD Commands:
-
 There are some preset commands instructions in LCD, which we need to send to LCD through some microcontroller. Some important command instructions are given below:
-
 Hex Code
-
 Command to LCD Instruction Register
 
 0F
@@ -122,7 +114,6 @@ Jump to second line, position 1
 C2
 
 Jump to second line, position 2
- 
 ## Procedure:
  1. click on STM 32 CUBE IDE
  2. click on FILE, click on new stm 32 project 
